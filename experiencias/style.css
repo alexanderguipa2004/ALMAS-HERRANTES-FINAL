@@ -1,0 +1,298 @@
+
+@font-face {
+    font-family: 'KumaOne';
+    src: url('fuentes/KumaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("images/Junji.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;               
+    flex-direction: column;      
+    font-family: 'KumaOne', sans-serif;
+}
+
+
+header {
+    background: rgba(113, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -15px; 
+
+
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+.menu {
+    background: #641515; 
+    padding: 8px 15px;
+    display: inline-block; 
+    border-radius: 3px; 
+}
+
+.menu a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.menu a.activo {
+    background: #f7b7b7; 
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: #000; 
+}
+
+.menu a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu .activo {
+    text-decoration: underline;
+}
+
+#botones a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-grow: 1; 
+}
+
+
+.sidebar-left {
+    width: 25%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.quote-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.quote-text {
+    font-size: 14px;
+}
+
+/* CUÉNTANOS */
+.cta-text p {
+    margin-bottom: 10px;
+}
+
+.cta-text h2 {
+    margin-bottom: 10px;
+}
+
+.cta-input {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.btn-cta-send {
+    display: inline-block;
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-feed {
+    width: 55%;
+    padding: 20px;
+}
+/* Caja individual para cada historia */
+.experience-box {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    margin-bottom: 25px; 
+    border-radius: 8px;  
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.experience-box h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+/* Texto */
+.experience-box p {
+    line-height: 1.5;
+}
+
+.experience-box .read-more {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+
+
+/* ======= PAGINACIÓN ======= */
+.pagination-link-wrapper {
+    margin-top: 20px;
+}
+
+.btn-pagination {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ======= SIDEBAR RIGHT ======= */
+.sidebar-right {
+    width: 20%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+footer {
+    margin-top: auto; /* NUEVO: lleva el footer al fondo */
+    text-align: center;
+    padding: 20px;
+    background: rgba(113, 0, 0, 0.75);
+}
+
+.tentaculo-right {
+    position: fixed;
+    right: 80px;        
+    top: 20%;
+    width: 260px;       
+    opacity: 0.88;
+
+   
+    mix-blend-mode: multiply;
+
+    pointer-events: none;
+    z-index: 3;
+}
+
+@keyframes flotarTentaculo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+.tentaculo-right {
+    position: fixed;
+    right: 80px;
+    top: 20%;
+    width: 260px;
+    opacity: 0.88;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 3;
+
+    animation: flotarTentaculo 6s ease-in-out infinite;
+}
+
+.banner-lovecraft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 25px 0;
+}
+
+.banner-lovecraft img {
+    width: 95%;           
+    filter: brightness(0.9);
+    opacity: 0.95;
+    pointer-events: none;   
+}
+.archivo-paranormal {
+    padding: 40px 0;
+}
+
+.archivo-paranormal h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.galeria-paranormal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.galeria-paranormal .item {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #444;
+}
+
+.galeria-paranormal .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.galeria-paranormal .item img:hover {
+    transform: scale(1.08);
+    filter: brightness(0.8);
+}

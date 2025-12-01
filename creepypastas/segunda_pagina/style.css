@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: KumarOne;
+    src: url(/../fuentes/KumarOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/../fuentes/Inter/static/Inter_18pt-Regular.ttf);
+}
+
+:root{
+    /*Cementerio neblinoso*/
+    --negro_carbon: #1C1C1C;
+    --gris_ceniza: #444444;
+    --blanco_bruma: #EAEAEA;
+    --verde_musgo: #556B2F;
+    --azul_nocturno: #191970;
+
+    /*Oscuridad espectral*/
+    --negro_profundo: #0D0D0D;
+    --gris_humo: #2E2E2E;
+    --blanco_espectral: #F5F5F5;
+    --rojo_sangre:#8B0000;
+    --gris_plateado: #BFBFBF;
+
+    /*Fuentes*/
+    --titulo: KumarOne;
+    --texto: Inter;
+}
+
+header{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--negro_profundo);
+    padding: 15px;
+}
+
+header h1{
+    color: var(--blanco_espectral);
+}
+
+body{
+    /*background-color: var(--negro_profundo);*/
+    background-image: url(imagenes/bosque.jpg);
+    background-size: cover;                
+    background-repeat: no-repeat;          
+    background-position: center center;     
+    background-attachment: fixed;           
+}
+
+main{
+    /*border-top: 2px solid var(--negro_carbon);*/
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--blanco_espectral);
+    border-bottom: 1.5px solid var(--blanco_espectral);
+    font-family: var(--texto);
+    font-size: 16px;
+}
+
+.menu a:hover{
+    background-color: var(--gris_plateado);
+    color: var(--negro_profundo);
+}
+
+.menu a.activo{
+    background-color: var(--blanco_espectral);
+    color: var(--negro_profundo);
+}
+
+#botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botones a{
+    text-decoration: none;
+    font-family: var(--texto);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--rojo_sangre);
+    border: 2px solid var(--rojo_sangre);
+    color: var(--blanco_espectral);
+    padding: 7px 14px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+
+.caja_historia{
+    background-color: var(--gris_humo);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 80px 200px;
+}
+
+.img_con_fondo {
+    background-color: black;       
+    height: 500px;                 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;              
+    margin-bottom: 20px;
+}
+
+.img_con_fondo img {
+    height: 100%;                  
+    width: auto;                   
+}
+
+.caja_historia h2{
+    color: var(--blanco_espectral);
+    font-family: var(--titulo);
+    font-size: 45px;
+    padding: 0 18px;
+    text-align: center;
+}
+
+.caja_historia p{
+    color: var(--blanco_espectral);
+    font-family: var(--texto);
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0 18px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.Volver {
+  background-color: var(--rojo_sangre);
+  color: var(--blanco_espectral);
+  padding: 10px 15px;
+  font-family: var(--titulo);
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+footer{
+    font-family: var(--texto);
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 240px;
+    color: var(--blanco_espectral);
+}

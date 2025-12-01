@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almas Errantes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🕯️Almas Errantes</h1>
+      <!--Menú principal-->
+      <div class="menu">
+        <a href="../index.html">Casa</a>
+        <a href="../historias/index.html">Historias</a>
+        <a href="index.html" class="activo">Creepypastas</a>
+        <a href="../leyendas urbanas/Leyendas_Principal.html">Leyendas Urbanas</a>
+        <a href="../experiencias/pagina1.html">Experiencias</a>
+      </div>
+      <!--Boton de datos-->
+      <div id="botones">
+        <a href="../login y registro/index.html">Iniciar Sesión</a>
+        <a href="../login y registro/index.html">Registrarte</a>
+      </div>
+    </header>
+
+    <main>
+      <!--Barra de destacados-->
+      <section id="destacado">
+        <img src="imagenes/slenderman.jpg" alt="imagen">
+        <div id="contenido_destacado">
+          <h3 id="titulo_destacado">HISTORIA DESTACADA</h3>
+          <h2 id="tit_historia">“SLENDERMAN”</h2>
+          <p id="pa_historia">
+            Slenderman no es un monstruo que nació en un libro o en una película. Nació en internet… y creció con nosotros...
+          </p>
+          <div id="boton_y_valorar">  
+            <a href="segunda_pagina/slenderman.html" class="leer_ahora">Leer ahora</a>
+            <!--Estrellas de valoración-->
+            <div class="estrellas">
+              <input type="radio" id="estrella5" name="valoracion" value="5">
+              <label for="estrella5">★</label>
+
+              <input type="radio" id="estrella4" name="valoracion" value="4">
+              <label for="estrella4">★</label>
+
+              <input type="radio" id="estrella3" name="valoracion" value="3">
+              <label for="estrella3">★</label>
+
+              <input type="radio" id="estrella2" name="valoracion" value="2">
+              <label for="estrella2">★</label>
+
+              <input type="radio" id="estrella1" name="valoracion" value="1">
+              <label for="estrella1">★</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Colección de historias-->
+      <section id="coleccion">
+        <h2>COLECCIÓN DE TERROR</h2>
+        <!--Menú de colección-->
+        <div class="menu" id="menu_categorias">
+          <input type="radio" id="recientes" name="menu" checked >
+          <label for="recientes">Más recientes</label>
+          
+          <input type="radio" id="valoradas" name="menu">
+          <label for="valoradas">Mejores valoradas</label>
+          
+          <input type="radio" id="populares" name="menu">
+          <label for="populares">Más populares</label>
+        </div>
+        <!--cajas con historias-->
+        <div class="historias">
+          <!--Historias recientes-->
+          <div class="categoria" id="cont_reciente">
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/jeff.jpeg" alt="">
+              </div>
+              <h4>JEFF THE KILLER - “No apagues la luz”</h4>
+              <p>Nunca pensé que una historia de internet pudiera seguirme a la vida real. Al principio, Jeff the Killer era solo un meme viejo, una imagen horrible...</p>
+              <a href="segunda_pagina/jeff_the_killer.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/pokemon.jpg" alt="">
+              </div>
+              <h4>POKEMON Y LOS SUICIDIOS - “El Cartucho Blanco”</h4>
+              <p>Cuando era niño, Pokémon era mi mundo: coleccionaba cartas, veía la serie y pasaba horas con mi Game Boy. Pero hubo un cartucho del que...</p>
+              <a href="segunda_pagina/pokemon_suici.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R2" name="valoracionR2" value="5">
+                <label for="estrella5-R2">★</label>
+
+                <input type="radio" id="estrella4-R2" name="valoracionR2" value="4">
+                <label for="estrella4-R2">★</label>
+
+                <input type="radio" id="estrella3-R2" name="valoracionR2" value="3">
+                <label for="estrella3-R2">★</label>
+
+                <input type="radio" id="estrella2-R2" name="valoracionR2" value="2">
+                <label for="estrella2-R2">★</label>
+
+                <input type="radio" id="estrella1-R2" name="valoracionR2" value="1">
+                <label for="estrella1-R2">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/caraazul.png" alt="">
+              </div>
+              <h4>EYELES JACK</h4>
+              <p>Jack era un adolescente que trabajaba en un periódico local. Un día, su jefe anunció que Estados Unidos había entrado en la Segunda Guerra Mundial y Jack ...</p>
+              <a href="segunda_pagina/EYELES JACK.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R3" name="valoracionR3" value="5">
+                <label for="estrella5-R3">★</label>
+
+                <input type="radio" id="estrella4-R3" name="valoracionR3" value="4">
+                <label for="estrella4-R3">★</label>
+
+                <input type="radio" id="estrella3-R3" name="valoracionR3" value="3">
+                <label for="estrella3-R3">★</label>
+
+                <input type="radio" id="estrella2-R3" name="valoracionR3" value="2">
+                <label for="estrella2-R3">★</label>
+
+                <input type="radio" id="estrella1-R3" name="valoracionR3" value="1">
+                <label for="estrella1-R3">★</label>
+              </div>
+            </div>
+          </div>
+          <!--Historias populares-->
+          <div class="categoria" id="cont_populares">
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/gris.jpg" alt="">
+              </div>
+              <h4>THE RAKE</h4>
+              <p>La mayoría de reportes coinciden: el Rake no suena, no gruñe y no respira como algo vivo. Solo observa. Los testimonios más antiguos provienen del siglo XVII, en diarios donde lo describen como una “criatura desnuda, pálida, delgada...</p>
+              <a href="segunda_pagina/THE RAKE.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-P1" name="valoracionP1" value="5">
+                <label for="estrella5-P1">★</label>
+
+                <input type="radio" id="estrella4-P1" name="valoracionP1" value="4">
+                <label for="estrella4-P1">★</label>
+
+                <input type="radio" id="estrella3-P1" name="valoracionP1" value="3">
+                <label for="estrella3-P1">★</label>
+
+                <input type="radio" id="estrella2-P1" name="valoracionP1" value="2">
+                <label for="estrella2-P1">★</label>
+
+                <input type="radio" id="estrella1-P1" name="valoracionP1" value="1">
+                <label for="estrella1-P1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/ojos negros.jpg" alt="">
+              </div>
+              <h4>BEN DROWNED</h4>
+              <p>Al intentar borrar el archivo, el juego se volvió extraño. Las texturas se distorsionaron, los personajes parecían actuar conscientes del jugador, y la estatua de Link Elegía lo perseguía sin explicación....</p>
+              <a href="segunda_pagina/BEN DROWNED.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-P2" name="valoracionP2" value="5">
+                <label for="estrella5-P2">★</label>
+
+                <input type="radio" id="estrella4-P2" name="valoracionP2" value="4">
+                <label for="estrella4-P2">★</label>
+
+                <input type="radio" id="estrella3-P2" name="valoracionP2" value="3">
+                <label for="estrella3-P2">★</label>
+
+                <input type="radio" id="estrella2-P2" name="valoracionP2" value="2">
+                <label for="estrella2-P2">★</label>
+
+                <input type="radio" id="estrella1-P2" name="valoracionP2" value="1">
+                <label for="estrella1-P2">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/smiledog.jpg" alt="">
+              </div>
+              <h4>SMILE.DOG</h4>
+              <p>El perro aparece, pero no camina: se acerca cuadro por cuadro, como una fotografía animada, con la misma sonrisa torcida. Las víctimas dicen que solo hay una forma de detenerlo:...</p>
+              <a href="segunda_pagina/SMILE.DOG.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-P3" name="valoracionP3" value="5">
+                <label for="estrella5-P3">★</label>
+
+                <input type="radio" id="estrella4-P3" name="valoracionP3" value="4">
+                <label for="estrella4-P3">★</label>
+
+                <input type="radio" id="estrella3-P3" name="valoracionP3" value="3">
+                <label for="estrella3-P3">★</label>
+
+                <input type="radio" id="estrella2-P3" name="valoracionP3" value="2">
+                <label for="estrella2-P3">★</label>
+
+                <input type="radio" id="estrella1-P3" name="valoracionP3" value="1">
+                <label for="estrella1-P3">★</label>
+              </div>
+            </div>
+          </div>
+          <div class="categoria" id="cont_valoradas">
+            <!--Historias valoradas-->
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/manos largas.jpg" alt="">
+              </div>
+              <h4>CANDLE COVE</h4>
+              <p>Todo empezó en un foro donde varios usuarios recordaban un programa infantil llamado Candle Cove. Decían que trataba de un barco pirata dirigido por marionetas extrañas...</p>
+              <a href="segunda_pagina/CANDLE COVE.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-V1" name="valoracionV1" value="5">
+                <label for="estrella5-V1">★</label>
+
+                <input type="radio" id="estrella4-V1" name="valoracionV1" value="4">
+                <label for="estrella4-V1">★</label>
+
+                <input type="radio" id="estrella3-V1" name="valoracionV1" value="3">
+                <label for="estrella3-V1">★</label>
+
+                <input type="radio" id="estrella2-V1" name="valoracionV1" value="2">
+                <label for="estrella2-V1">★</label>
+
+                <input type="radio" id="estrella1-V1" name="valoracionV1" value="1">
+                <label for="estrella1-V1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/juegopokemon.jpg" alt="">
+              </div>
+              <h4>LAVENDER TOWN SYNDROME</h4>
+              <p>Cuando salió Pokémon en Japón, algunos jugadores notaron que la música del Pueblo Lavanda tenía algo raro: frecuencias muy agudas que casi no se escuchaban...</p>
+              <a href="segunda_pagina/LAVENDER TOWN SYNDROME.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-V2" name="valoracionV2" value="5">
+                <label for="estrella5-V2">★</label>
+
+                <input type="radio" id="estrella4-V2" name="valoracionV2" value="4">
+                <label for="estrella4-V2">★</label>
+
+                <input type="radio" id="estrella3-V2" name="valoracionV2" value="3">
+                <label for="estrella3-V2">★</label>
+
+                <input type="radio" id="estrella2-V2" name="valoracionV2" value="2">
+                <label for="estrella2-V2">★</label>
+
+                <input type="radio" id="estrella1-V2" name="valoracionV2" value="1">
+                <label for="estrella1-V2">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/smile.jpg" alt="">
+              </div>
+              <h4>BLOODY PAINTER</h4>
+              <p>Fue acusado de haber robado el reloj de uno de sus compañeros, por lo que Helen se convirtió en una victima de Bullying, algo que aparentemente no le importaba, pero en el fondo sentía un gran dolor y tristeza...</p>
+              <a href="segunda_pagina/BLOODY PAINTER.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-V3" name="valoracionV3" value="5">
+                <label for="estrella5-V3">★</label>
+
+                <input type="radio" id="estrella4-V3" name="valoracionV3" value="4">
+                <label for="estrella4-V3">★</label>
+
+                <input type="radio" id="estrella3-V3" name="valoracionV3" value="3">
+                <label for="estrella3-V3">★</label>
+
+                <input type="radio" id="estrella2-V3" name="valoracionV3" value="2">
+                <label for="estrella2-V3">★</label>
+
+                <input type="radio" id="estrella1-V3" name="valoracionV3" value="1">
+                <label for="estrella1-V3">★</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="checkbox" id="desplegar_historias" hidden>
+
+        <label for="desplegar_historias" class="btn_ver_todo">
+          Ver Todas las Historias <b>↓</b>
+        </label>
+
+        <div id="historias_extra">
+          
+          <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/niñadejeff2.jpg" alt="">
+              </div>
+              <h4>SALLY WILLIAMS</h4>
+              <p>era una niña muy alegre, hasta que su tío Johnny empezó a abusar de ella, lo que provocaba que la pequeña niña fuera cada vez más insegura, temerosa y triste...</p>
+              <a href="segunda_pagina/SALLY WILLIAMS.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/chico sin boca.jpeg" alt="">
+              </div>
+              <h4>TICCI TOBY</h4>
+              <p>Padecía del Síndrome de Tourette, lo que le causaba tics incontrolables, de los cuales sus compañeros de clase se burlaban llamándolo "Ticci Toby...</p>
+              <a href="segunda_pagina/TICCI TOBY.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/zero.webp" alt="">
+              </div>
+              <h4>ZERO</h4>
+              <p>Durante su adolescencia no solo tenía que soportar al Sr. Rogers, sino también el bullying de sus compañeros de clase, siendo Ann su única amiga en ese entonces....</p>
+              <a href="segunda_pagina/ZERO.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/ninathekiller.jpg" alt="">
+              </div>
+              <h4>NINA THE KILLER</h4>
+              <p>una niña de 11 años con un gran fanatismo por Jeff the Killer. Esta había sido trasladada de su escuela a otra para estar más cerca de su casa. Pero en su nueva escuela conocería ...</p>
+              <a href="segunda_pagina/NINA THE KILLER.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/niñacama.png" alt="">
+              </div>
+              <h4>No solo los perros lamen</h4>
+              <p>Una niña de 15 años, conocida en la historia simplemente como “girl“, decidió que ya era lo suficientemente mayor como para quedarse sola en casa, desestimando un viaje con sus padres durante un fin de semana...</p>
+              <a href="segunda_pagina/No solo los perros lamen.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+            <div class="caja_historia">
+              <div class="img_con_fondo">
+                  <img src="imagenes/japonesa.jpg" alt="">
+              </div>
+              <h4>KUCHISAKE ONNA</h4>
+              <p>la mujer mas bella de toda esa ciudad, era pretendida por muchos hombres, pero al final decidio casarse con un samurai . Estaban felizmente casados, pero un día...</p>
+              <a href="segunda_pagina/KUCHISAKE ONNA.html">Leer Historia <b>➜</b></a>
+              <div class="valorar">
+                <input type="radio" id="estrella5-R1" name="valoracionR1" value="5">
+                <label for="estrella5-R1">★</label>
+
+                <input type="radio" id="estrella4-R1" name="valoracionR1" value="4">
+                <label for="estrella4-R1">★</label>
+
+                <input type="radio" id="estrella3-R1" name="valoracionR1" value="3">
+                <label for="estrella3-R1">★</label>
+
+                <input type="radio" id="estrella2-R1" name="valoracionR1" value="2">
+                <label for="estrella2-R1">★</label>
+
+                <input type="radio" id="estrella1-R1" name="valoracionR1" value="1">
+                <label for="estrella1-R1">★</label>
+              </div>
+            </div>
+
+        </div>
+
+
+      </section>
+    </main>
+    <footer>AlmasErrantes.com es un sitio dedicado al entretenimiento tenebroso, las historias, mitos , leyendas , testimonios , tienen su respectivo lugar de referencia, la credibilidad es subjetiva. Tu eliges creer...</footer>
+
+    <script>
+      const radios = document.querySelectorAll('.menu input[name="menu"]');
+      const categorias = {
+        recientes: document.getElementById('cont_reciente'),
+        populares: document.getElementById('cont_populares'),
+        valoradas: document.getElementById('cont_valoradas')
+      };
+
+      function mostrarCategoria(cat) {
+        Object.values(categorias).forEach(c => c.style.display = 'none');
+        cat.style.display = 'flex';
+      }
+
+      radios.forEach(radio => {
+        radio.addEventListener('click', () => {
+          mostrarCategoria(categorias[radio.id]);
+        });
+      });
+
+      // Mostrar al inicio "Recientes"
+      mostrarCategoria(categorias['recientes']);
+    </script>
+
+  </body>
+</html>

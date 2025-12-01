@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: KumarOne;
+    src: url(fuentes/KumarOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fuentes/Inter/static/Inter_18pt-Regular.ttf);
+}
+
+:root{
+
+    --negro_carbon: #1C1C1C;
+    --gris_ceniza: #444444;
+    --blanco_bruma: #EAEAEA;
+    --verde_musgo: #556B2F;
+    --azul_nocturno: #191970;
+
+ 
+    --titulo: KumarOne;
+    --texto: Inter;
+}
+
+main{
+    border-top: 2px solid var(--negro_carbon);
+}
+
+header{
+    background-color: #111;        
+    padding: 20px 40px;             
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;  
+}
+
+#modo{
+    display: none;
+}
+
+.cambiar{
+    display: inline-block;
+    font-family: var(--texto);
+    font-size: 14px;
+    background-color: var(--negro_carbon);
+    border: 2px solid var(--negro_carbon);
+    color: var(--blanco_bruma);
+    padding: 7px 14px;
+    border-radius: 50px;
+}
+
+.cambiar:hover{
+    background-color: var(--gris_ceniza);
+}
+
+#modo:checked + .cambiar{
+    background-color: var(--verde_musgo);
+}
+
+#modo:checked + .cambiar:hover{
+    background-color: var(--gris_ceniza);
+}
+
+.menu{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 6px;
+    background-color: #b71c1c; 
+    transition: 0.25s ease;
+}
+
+
+.menu a:hover{
+    background-color:#d32f2f ;
+    color: var(--blanco_bruma);
+}
+
+.menu a.activo{
+    background-color:#b71c1c ;
+    color: var(--blanco_bruma);
+}
+
+#botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+
+#botones a{
+    text-decoration: none;
+    font-family: var(--texto);
+    font-size: 14px;
+    background-color: #b71c1c;
+    border: 2px solid var(--negro_carbon);
+    color: var(--blanco_bruma);
+    padding: 7px 14px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+
+.login-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.login-front {
+    padding: 4px;
+}
+
+.login-back {
+    padding: 4px;
+    transform: rotateY(180deg);
+}
+
+
+
+
+.login-card {
+    display:grid;
+    grid-template-columns: 1fr 420px;
+    gap:36px;
+    align-items:start;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.login-left,
+.login-right {
+    flex: 1;
+}
+
+.login-left {
+    padding: 20px 24px;
+    color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-right {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.login-right img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.login-title {
+    font-family:'Cinzel', serif;
+    font-size:32px;
+    letter-spacing:2px;
+    margin-bottom:8px;
+    text-align: center;
+}
+.login-link {
+      margin-top:8px;
+      color:var(--muted);
+      font-size:14px;
+}
+.login-flip {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.login-flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.login-flip-inner.flip {
+    transform: rotateY(180deg);
+}
+.login-btn-secundario {
+    width: 100%;
+    padding: 8px;
+    color: #1102e6;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-decoration: underline;
+    font-weight: bold;
+}

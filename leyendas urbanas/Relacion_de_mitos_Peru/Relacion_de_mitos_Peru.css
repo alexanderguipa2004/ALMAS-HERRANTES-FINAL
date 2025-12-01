@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= VARIABLES DE COLOR ======= */
+:root {
+--color-fondo:  #2E2E2E; /* Gris humo */
+--color-texto:#0D0D0D; /* Negro profundo*/ 
+--color-principal: #BFBFBF; /* Gris plateado */
+--color-claro: #F5F5F5; /* Blanco espectral */
+--color-sangre: #8B0000; /* Rojo sangre */
+}
+
+/* ======= ESTILOS GENERALES ======= */
+body {
+font-family: 'Times New Roman', serif;
+color: var(--color-texto);
+line-height: 1.6;
+  background-image: url("Imagens/fondo\ rojo.jpg");
+    background-size: cover; 
+  background-position: center;  
+  background-attachment: fixed;
+}
+
+/* ======= ENCABEZADO ======= */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-claro); 
+  padding: 15px 15px 15px 15px;
+  font-size: 1.2rem;
+}
+
+.logo {
+font-size: 1.3rem;
+font-weight: bold;
+padding-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none; 
+    gap: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav ul li:hover { 
+text-decoration: underline; 
+}
+
+
+nav ul li a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.botones { /* contenedor de los botones */
+  display: flex;
+  gap: 10px;
+}
+
+.boton { 
+border: none; 
+border-radius: 50px; 
+cursor: pointer; 
+background-color: var(--color-fondo); 
+color: var(--color-claro); 
+padding: 8px 15px; 
+}
+
+.boton a{
+    color: var(--color-claro);
+    text-decoration: none;
+}
+
+.boton:hover { 
+background-color: var(--color-sangre); 
+}
+
+/*----CONTENIDO PRINCIPAL------ */
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-claro);
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.contenido {
+  display: flex; 
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+
+.contenido ul {      
+  font-size: 1.6rem;
+  line-height: 3;
+}
+
+.contenido ul a{      
+  font-size: 1.6rem;
+  line-height: 3;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contenido ul a:hover{      
+  color: var(--color-sangre);
+}
+
+.contenido li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.contenido li:hover {
+  text-decoration: underline;
+}
+
+.contenido, 
+.contenido h1, 
+.contenido li, 
+.contenido a {
+    color: var(--color-claro);
+}
+
+/* FOOTER */
+footer{
+  background-color: var(--color-sangre);
+  color: var(--color-claro);
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .boton {
+        width: 80%;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+}

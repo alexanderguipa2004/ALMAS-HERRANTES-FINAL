@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* VARIABLES DE COLOR */
+
+:root {
+--color-fondo:  #2E2E2E; /* Gris humo */
+--color-texto:#0D0D0D; /* Negro profundo*/ 
+--color-principal: #BFBFBF; /* Gris plateado */
+--color-claro: #F5F5F5; /* Blanco espectral */
+--color-sangre: #8B0000; /* Rojo sangre */
+}
+
+/* ESTILOS GENERALES */
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-claro);  
+    padding: 15px 15px 15px 15px;
+    font-size: 1.2rem;
+}
+
+.logo {
+font-size: 1.3rem; 
+font-weight: bold; 
+padding-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none; /* Eliminar viñetas */
+    gap: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+text-decoration: underline; 
+}
+
+nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.botones { /* contenedor de los botones */
+    display: flex;
+    gap: 10px;
+}
+
+.boton { /* estilo general de los botones */
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    background-color: var(--color-fondo); 
+    color: var(--color-claro);
+    padding: 8px 15px; 
+}
+
+.boton a{
+    color: var(--color-claro);
+    text-decoration: none;
+}
+
+.boton:hover { 
+background-color: var(--color-sangre); 
+}
+
+
+/*  SECCIÓN PRINCIPAL */
+
+.principal {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover; 
+    background-position: center;  
+    background-attachment: fixed;
+    background-image: url("Imagenes/Fondo.jpg");
+}
+
+.principal h1 { 
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.principal p { 
+    font-size: 1.7rem; 
+    max-width: 800px; 
+    margin: 20px auto; 
+}
+
+.contenido {
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.50);
+    display: inline-block;
+}
+
+
+/* SECCION EXPLORACION*/
+
+.exploracion {
+    background-color: var(--color-principal);
+    padding: 70px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto_exploracion{
+ width: 50%;
+}
+
+.texto_exploracion h2 { 
+    font-size: 2rem; 
+    margin-bottom: 20px; /* Espacio debajo del subtítulo */
+    color: var(--color-texto); 
+    width: 60%;
+}
+
+.texto_exploracion ul{
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.texto_exploracion ul a {
+  color: inherit;           /* Hereda color texto normal */
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.texto_exploracion ul a:hover {
+  color: var(--color-sangre);       
+  text-decoration: underline; 
+}
+
+.texto_exploracion p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    text-align: justify;
+}
+
+.explor-image img {
+    width: 550px;        
+    max-width: 100%;     /* Evita que se salga del contenedor */
+    height: auto;      
+    border-radius: 15px; 
+}
+
+h3{
+    padding-left: 80px;
+    background-color: var(--color-principal);
+    padding-bottom: 20px;
+}
+
+h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: var(--color-sangre);
+  text-decoration:underline;
+}
+
+/* FOOTER */ 
+
+footer{
+    background-color: var(--color-sangre);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 10px 10px;
+}
+ 
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .boton {
+        width: 80%;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+}
+
+/* ===== RESPONSIVE PARA LA SECCIÓN DE EXPLORACIÓN ===== */
+@media (max-width: 900px) {
+
+    .exploracion {
+        flex-direction: column;     /* Imagen abajo */
+        text-align: center;         /* Centra el texto */
+        gap: 30px;                  /* Espacio entre texto e imagen */
+    }
+
+    .texto_exploracion {
+        width: 100%;                /* Texto ocupa todo el ancho */
+    }
+
+    .texto_exploracion h2 {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .texto_exploracion ul a {
+        font-size: 1.3rem;
+    }
+
+    .explor-image img {
+        width: 100%;                 /* Imagen se ajusta */
+        max-width: 350px;            /* Límite para que no sea grande */
+        margin: auto;
+        display: block;
+    }
+}
+
+/* RESPONSIVE GENERAL */
+@media (max-width: 600px) {
+
+    .principal h1 {
+        font-size: 2.2rem;
+    }
+
+    .principal p {
+        font-size: 1.2rem;
+    }
+
+}

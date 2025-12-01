@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #242323;
+}
+@font-face {
+    font-family: KumarOne;
+    src: url(fuentes/KumarOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fuentes/Inter/static/Inter_18pt-Regular.ttf);
+}
+
+:root{
+    /*Cementerio neblinoso*/
+    --negro_carbon: #1C1C1C;
+    --gris_ceniza: #444444;
+    --blanco_bruma: #EAEAEA;
+    --verde_musgo: #556B2F;
+    --azul_nocturno: #191970;
+
+    /*Fuentes*/
+    --titulo: KumarOne;
+    --texto: Inter;
+}
+
+main{
+    border-top: 2px solid var(--negro_carbon);
+}
+
+header{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+/*ocultar el checkbox*/
+#modo{
+    display: none;
+}
+
+.cambiar{
+    display: inline-block;
+    font-family: var(--texto);
+    font-size: 14px;
+    background-color: var(--negro_carbon);
+    border: 2px solid var(--negro_carbon);
+    color: var(--blanco_bruma);
+    padding: 7px 14px;
+    border-radius: 50px;
+}
+
+.cambiar:hover{
+    background-color: var(--gris_ceniza);
+}
+
+#modo:checked + .cambiar{
+    background-color: var(--verde_musgo);
+}
+
+#modo:checked + .cambiar:hover{
+    background-color: var(--gris_ceniza);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--blanco_bruma);
+    background-color: rgb(150, 25, 25);
+    border-bottom: 1.5px solid var(--verde_musgo);
+    font-family: var(--texto);
+    font-size: 16px;
+}
+
+.menu a:hover{
+    background-color: var(--negro_carbon);
+    color: var(--blanco_bruma);
+}
+
+.menu a.activo{
+    background-color: rgb(250, 162, 162);
+    color: var(--blanco_bruma);
+}
+
+#botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botones a{
+    text-decoration: none;
+    font-family: var(--texto);
+    font-size: 14px;
+    background-color: rgb(150, 25, 25);
+    border: 2px solid var(--negro_carbon);
+    color: var(--blanco_bruma);
+    padding: 7px 14px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+
+/* === Imagen principal === */
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* === HISTORIAS === */
+.historias {
+    padding: 30px 40px;
+    color: white;
+}
+
+.historias h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 15px;
+    background: #242323;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text-container {
+    max-height: 60px; /* altura visible antes de expandir */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  /* Checkbox oculto */
+  #vermas-toggle {
+    display: none;
+  }
+
+  /* Expandir cuando está activo */
+  #vermas-toggle:checked ~ .text-container {
+    max-height: 500px;
+  }
+
+  /* Botón */
+  .vermas-btn {
+    display: inline-block;
+    margin-top: 8px;
+    color: #161616;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+  }
+
+  /* Cambiar texto Ver más / Ver menos */
+  .vermas-btn .menos {
+    display: none;
+  }
+
+  #vermas-toggle:checked ~ .vermas-btn .mas {
+    display: none;
+  }
+
+  #vermas-toggle:checked ~ .vermas-btn .menos {
+    display: inline;
+  }
+
+/* === EXPERIENCIAS === */
+.experiencias {
+    padding: 30px 40px;
+}
+
+.experiencias h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.exp-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.exp-card {
+    background-color: #030303;
+    padding: 10px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.exp-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.exp-banner {
+    flex: 1;
+    position: relative;
+    min-width: 250px;
+}
+
+.exp-banner img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.exp-banner .text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(250, 248, 248);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* === FOOTER === */
+
+footer{
+    background-color: rgb(104, 13, 13);
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+ 
+
+/* --- TEXTO EXPANDIBLE SOLO CON CSS --- */
+.vermas-toggle {
+    display: none;
+}
+
+.card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.vermas-toggle:checked ~ p {
+    -webkit-line-clamp: unset;
+    max-height: 4000px;
+}
+
+.vermas-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f0b1b1;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: red;
+}
+
+.vermas-btn .menos {
+    display: none;
+}
+
+.vermas-toggle:checked + .vermas-btn .mas {
+    display: none;
+}
+
+.vermas-toggle:checked + .vermas-btn .menos {
+    display: inline;
+}
